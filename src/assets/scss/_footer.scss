@@ -1,0 +1,131 @@
+.footer{
+    &-top{
+        background-image: url("../img/footertop.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 890px;
+        @include xl{
+            height: 810px;
+        }
+        @include lg{
+            height: 650px;
+        }
+        @include mmd{
+            height: 530px;
+        }
+        @include sm{
+            height: 305px;
+        }
+    }
+    &-bottom{
+        background-color: #FFB800;
+        background-image: url("../img/footerbottom.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 910px;
+        @include xl{
+            height: 750px;
+        }
+        @include lg{
+            height: 610px;
+        }
+        @include md{
+            height: 540px;
+        }
+        @include sm{
+            height: 280px;
+            background-size: cover;
+            background-position: bottom center;
+        }
+        &-content{
+            padding-top: 77px;
+            @include sm{
+                padding-top: 30px;
+            }
+            h2{
+                color: $white;
+            text-shadow: 2px 6px 0px #000;
+            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-color: #000;
+           @include font-148;
+            font-weight: 700;
+            @include md{
+                -webkit-text-stroke-width: 3px;
+            }
+            @include sm{
+                -webkit-text-stroke-width: 2px;
+            }
+      
+            }
+        }
+
+    }
+}
+
+.tv{
+    padding: 110px 0 ;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content:  "";
+        width: 100px;
+        height: 100px;
+        background: #632307;
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        left: 0;
+    }
+    &::after{
+        content:  "";
+        width: 100%;
+        height: 100%;
+        background-color: #FFB800;
+        border-radius: 80px 80px 0 0 ;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0;
+        @include sm{
+            border-radius:  0 ;
+        }
+    }
+    @include md{
+        padding: 70px 0;
+    }
+    @include sm{
+        padding: 50px 0;
+        border-radius: 0 ;
+    }
+
+    &-image{
+        width: 875px;
+        height: 785px;
+        @include xxl{
+            width: 100%;
+            height: 100%; 
+        }
+        @include xl{
+            width: 100%;
+            height: 100%; 
+        }
+        @include lg{
+            width: 100%;
+            height: 100%; 
+        }
+        @include mmd{
+            width: 100%;
+            height: 100%; 
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+}

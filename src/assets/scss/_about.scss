@@ -1,0 +1,36 @@
+.about {
+    position: relative;
+    z-index: 1;
+    background-color: #FFB800;
+    // .common-marquee{
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     z-index: 2;
+    //     height: 122px;
+    //     display: flex;
+    //     align-items: center;
+    //     @include lg{
+    //         height: 85px;
+    //     }
+    //     @include md{
+    //         height: 85px;
+    //     }
+    //     @include sm{
+    //         height: 50px;
+    //     }
+    //     @include ssm{
+    //         height: 40px;
+    //     }
+    //     h4{
+    //         @include md{
+    //             margin-right: 40px;
+    //         }
+    //         @include sm{
+    //             margin-right: 20px;
+    //             font-size: 18px;
+    //         }
+    //     }
+    // }
+}

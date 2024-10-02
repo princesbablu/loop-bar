@@ -1,0 +1,138 @@
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(26px/16px);
+    color: $text;
+    font-family: $font-1;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    border: 1px solid $border;
+    outline: none;
+    @include transition;
+    &:focus {
+        outline: none;
+        border-color: $primary;
+    }
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.common {
+    &-marquee {
+        padding: 30px 0;
+        & h4 {
+            margin-right: 90px;
+            @include md{
+                margin-right: 50px;
+                font-size: 25px;
+            }
+            @include sm{
+                margin-right: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// social 
+.social {
+    &-link {
+        --width: 100px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $white;
+        color: $black;
+        // box-shadow: 3px 3px 0 $black;
+        border-radius: 50%;
+        stroke-width: 3.571px;
+        stroke: #000;
+        filter: drop-shadow(3.399px 3.399px 0px #000);
+        border: 3px solid $black;
+        @include mmd{
+            --width: 70px;
+            // filter: drop-shadow(2.399px 2.399px 0px #000);
+            border: 1px solid $black;
+        }
+        svg{
+            --width:42px;
+            width: var(--width);
+            height: var(--width);
+            @include mmd{
+                --width:30px;
+            }
+        }
+        img{
+            --width:42px;
+            width: var(--width);
+            height: var(--width);
+            @include md{
+                --width:36px
+            }
+            @include sm{
+                --width:22px;
+            }
+        }
+        @include font-24;
+        &:hover {
+            filter: drop-shadow(0px 0px 0px transparent);
+        }
+        @include sm {
+            --width: 50px;
+            & svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+#root {
+    overflow: hidden;
+}

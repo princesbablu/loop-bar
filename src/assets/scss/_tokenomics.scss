@@ -1,0 +1,109 @@
+.tokenomics{
+    background-image: url("../img/tokenmosbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 120px 110px 155px;
+    @include xl{
+        padding: 72px 72px 110px;
+    }
+    @include lg{
+        padding: 44px 44px 85px;
+    }
+    @include mmd{
+        padding: 40px 40px 60px;
+    }
+    @include sm{
+        padding: 20px;
+    }
+    &-title{
+        h5{
+            color: #FFB800;
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: #000;
+            @include font-64;
+            font-weight: 700;
+            transform: rotate(-3deg);
+            text-transform: uppercase;
+            @include mmd{
+                -webkit-text-stroke-width: 3px;
+
+            }
+    
+        }
+    }
+    &-box{
+        margin-top: 32px;
+        margin-bottom: 42px;
+        width: 100%;
+        height: 460px;
+        background: #A4A4A4;
+        @include lg{
+            height: 360px;
+        }
+        @include md{
+            height: 350px;
+        }
+        @include sm{
+            height: 205px;
+        }
+    }
+    &-footer{        
+        a{
+            border: 5px solid $black;
+            background: #FFB800;
+            color: $black;
+            @include font-52;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 35px;
+            padding-bottom: 7px;
+            margin-top: 5px;
+            display: inline-block;
+            &:hover{
+                border: 5px solid $white;
+            }
+        }
+    }
+    
+    &-shap{
+        bottom: -4px;
+        right: 0;
+        width: 795px;
+        height: 725px;
+        @include xl{
+            width: 647px;
+            height: 589px;
+        }
+        @include lg{
+            width: 542px;
+            height: 499px;
+        }
+        @include mmd{
+            width: 410px;
+            height: 379px;
+        }
+        @include sm{
+         display: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+    // .cricle{
+    //     width: 100px;
+    //     height: 100px;
+    //     background-color: #632307;
+    //     bottom: -70px;
+    //     left: 0;
+    //     @include sm{
+    //         display: none;
+    //     }
+
+    // }
+
+}
